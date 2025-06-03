@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h2{
+    margin-bottom:15px;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #F6F0EB;
+    color: #492118;
+}
+header{
+    background-color: #FFF;
+    position:sticky;
+    top:0;
+}
+.header{
+    max-width:1290px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+}
+
+nav a+a{
+    margin-left: 60px;
+}
+a{
+    text-decoration-line: none ;
+    color:inherit;
+    font-weight: 700;
+    font-size: 20.97px;
+}
+.hero{
+    max-width:1290px;
+}
+section img{
+    width:100%;
+}
+section{
+    max-width:1040px;
+    margin:0 auto;
+    margin-top: 140px;
+}
+main{
+    padding:0 24px;
+}
+section p{
+    text-align:center;
+    font-size: 24px;
+    font-weight: 400;
+    color:#492118;
+}
+section h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+}
+main a{
+    text-decoration-line:underline;
+    padding-left:77%;
+    font-size:32px;
+}
+#deal-of-the-day{
+    margin-bottom: 50px;
+}
+footer p{
+    text-align:center;
+    font-size:24px;
+    font-weight:500;
+    color:#858585;
+    padding-top:25px;
+}
+@media(max-width:1200px)
+{
+    nav a{
+        font-size:16px;
+    }
+    nav a+a{
+        margin-left:36px;
+    }
+    .logo img{
+       width:50px;
+    }
+}
+@media(max-width:910px)
+{
+    nav a{
+        font-size:12px;
+    }
+    nav a+a{
+        margin-left:12px;
+    }
+    main a{
+        font-size:24px;
+    }
+}
+@media(max-width:670px)
+{
+    nav{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top:0;
+        padding:24px;
+        /* hidden */
+        display:none;
+    }
+    nav a+a{
+        margin:0;
+        margin-top: 16px;
+    }
+    header{
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+    }
+    .header{
+        padding: 12px 20px;
+        padding-top:0;
+        padding-bottom: 0px;
+        padding-right:0px;
+    }
+   .hero p{
+        font-size:10px;
+    }
+    section h2{
+        font-size:14px;
+    }
+    .logo img{
+        width:40px;
+    }
+    section{
+        margin-top:80px;
+    }
+    main a{
+        font-size:10px;
+    }
+    footer p{
+        font-size:13px;
+    }
+    .logo img{
+        padding-top:4px;
+    }
+}
+.close-icon{
+    position:absolute;
+    top:8px;
+    right:12px;
+    cursor:pointer;
+    /* hidden */
+    display:none; 
+}
+.hamburger-icon{
+    font-size:22px;
+    padding-left: 18px;
+    padding-bottom: 12px;
+}
+.hamburger-menu{
+    width:110px;
+    height:110px;
+    display:flex;
+    align-items:flex-end ;
+    border-radius: 50%;
+    position:absolute;
+    background-color: white;
+    top:-60px;
+    right:-60px;
+}
+.hamburger-container{
+    /* Hidden */
+    display:none;
+    position:relative;
+    overflow: hidden;
+    width:100px;
+    height:100px;
+}
+.show-nav{
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top:0;
+    padding:24px;
+}
